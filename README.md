@@ -13,6 +13,8 @@ https://ultra-sol-lp.maigo999.workers.dev
 - MAX / ULTRAモード切替
 - モバイル固定ナビゲーション
 - `prefers-reduced-motion`、キーボード、ARIA対応
+- SVG原稿から生成するOGP・favicon・アプリアイコン
+- canonical、OG/Twitter、JSON-LD、sitemap、robots対応
 - Cloudflare Workers Static Assets配信
 
 ## Stack
@@ -27,6 +29,7 @@ https://ultra-sol-lp.maigo999.workers.dev
 
 ```bash
 npm install
+npm run generate:assets
 npm run dev
 ```
 

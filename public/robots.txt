@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ultra-sol-lp.maigo999.workers.dev/sitemap.xml

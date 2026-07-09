@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Ultra Sol!!!</title>
+  <desc id="description">A solar visual celebrating GPT-5.6 Sol with oversized Ultra Sol lettering.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090909" />
+      <stop offset="0.6" stop-color="#100b08" />
+      <stop offset="1" stop-color="#251006" />
+    </linearGradient>
+    <radialGradient id="sun" cx="36%" cy="28%" r="72%">
+      <stop offset="0" stop-color="#fffbd0" />
+      <stop offset="0.14" stop-color="#ffd84a" />
+      <stop offset="0.52" stop-color="#ff7100" />
+      <stop offset="1" stop-color="#d82c00" />
+    </radialGradient>
+    <linearGradient id="flare" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff5c00" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#ffb800" />
+      <stop offset="1" stop-color="#ff5c00" stop-opacity="0" />
+    </linearGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#f2efe6" stroke-opacity="0.09" />
+    </pattern>
+    <filter id="sun-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="28" result="blur" />
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.1 0 0.45 0 0 0.05 0 0 0.1 0 0 0 0 0 0.9 0" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="acid-glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <clipPath id="canvas">
+      <rect width="1200" height="630" />
+    </clipPath>
+
+    <symbol id="mark-us" viewBox="0 0 100 64">
+      <g fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="square" stroke-linejoin="round">
+        <path d="M10 8v28q0 18 15 18t15-18V8" />
+        <path d="M90 10H62q-13 0-13 11t13 11h14q14 0 14 11T76 54H49" />
+      </g>
+    </symbol>
+
+    <symbol id="ultra-word" viewBox="0 0 580 140">
+      <g fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="square" stroke-linejoin="round">
+        <path d="M16 16v70q0 38 36 38t36-38V16" />
+        <path d="M120 16v108h86" />
+        <path d="M225 16h100M275 16v108" />
+        <path d="M354 124V16h48q41 0 41 34t-41 32h-48M401 82l50 42" />
+        <path d="M478 124l42-108 42 108M491 88h57" />
+      </g>
+    </symbol>
+
+    <symbol id="sol-word" viewBox="0 0 420 180">
+      <g fill="none" stroke="currentColor" stroke-width="34" stroke-linecap="square" stroke-linejoin="round">
+        <path d="M122 28H54Q22 28 22 60t34 28h38q31 0 31 32t-33 32H20" />
+        <path d="M194 28h36q40 0 40 40v44q0 40-40 40h-36q-40 0-40-40V68q0-40 40-40z" />
+        <path d="M310 28v124h90" />
+      </g>
+    </symbol>
+  </defs>
+
+  <g clip-path="url(#canvas)">
+    <rect width="1200" height="630" fill="url(#background)" />
+    <rect width="1200" height="630" fill="url(#grid)" />
+
+    <circle cx="948" cy="316" r="267" fill="none" stroke="#ffb800" stroke-opacity="0.22" stroke-width="2" stroke-dasharray="8 10" />
+    <circle cx="948" cy="316" r="226" fill="none" stroke="#ffb800" stroke-opacity="0.34" stroke-width="2" />
+    <g opacity="0.52">
+      <rect x="595" y="315" width="705" height="2" fill="url(#flare)" transform="rotate(-10 948 316)" />
+      <rect x="595" y="315" width="705" height="2" fill="url(#flare)" transform="rotate(46 948 316)" />
+      <rect x="595" y="315" width="705" height="2" fill="url(#flare)" transform="rotate(96 948 316)" />
+    </g>
+    <circle cx="948" cy="316" r="184" fill="url(#sun)" stroke="#fff5ac" stroke-opacity="0.64" stroke-width="2" filter="url(#sun-glow)" />
+    <circle cx="948" cy="316" r="159" fill="none" stroke="#7f2200" stroke-opacity="0.42" stroke-dasharray="5 7" />
+    <use href="#sol-word" x="873" y="286" width="150" height="64" color="#2a1804" />
+
+    <g transform="translate(54 44)">
+      <circle cx="24" cy="24" r="24" fill="#dfff38" />
+      <use href="#mark-us" x="8" y="13" width="32" height="22" color="#090909" />
+      <rect x="62" y="9" width="130" height="9" rx="4.5" fill="#f2efe6" />
+      <rect x="62" y="29" width="72" height="6" rx="3" fill="#dfff38" />
+      <rect x="142" y="29" width="48" height="6" rx="3" fill="#dfff38" opacity="0.48" />
+    </g>
+
+    <use href="#ultra-word" x="52" y="152" width="520" height="126" color="#f2efe6" />
+    <use href="#sol-word" x="50" y="296" width="500" height="214" color="#f2efe6" />
+    <g transform="translate(438 314) rotate(-7)" filter="url(#acid-glow)">
+      <rect width="58" height="104" rx="3" fill="#dfff38" />
+      <rect y="118" width="58" height="18" rx="2" fill="#dfff38" />
+    </g>
+
+    <g transform="translate(56 566)">
+      <circle cx="5" cy="-2" r="5" fill="#ff5c00" />
+      <rect x="24" y="-9" width="110" height="13" rx="6.5" fill="#f2efe6" />
+      <rect x="146" y="-9" width="84" height="13" rx="6.5" fill="#f2efe6" />
+      <rect x="242" y="-9" width="68" height="13" rx="6.5" fill="#dfff38" />
+    </g>
+
+    <g transform="translate(1000 566)" fill="#dfff38">
+      <rect width="42" height="6" rx="3" opacity="0.42" />
+      <rect x="52" width="58" height="6" rx="3" opacity="0.68" />
+      <rect x="120" width="30" height="6" rx="3" />
+    </g>
+
+    <rect width="12" height="630" fill="#dfff38" />
+    <rect width="1200" height="5" fill="#dfff38" />
+  </g>
+</svg>

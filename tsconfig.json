@@ -10,7 +10,7 @@
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
     "isolatedModules": true,
-    "types": ["vite/client"],
+    "types": ["vite/client", "node"],
     "noEmit": true,
     "strict": true,
     "noUnusedLocals": true,

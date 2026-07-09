@@ -1,0 +1,27 @@
+{
+  "name": "Ultra Sol!!!",
+  "short_name": "Ultra Sol",
+  "description": "GPT-5.6 Solの登場を勝手に祝う非公式パロディLP",
+  "lang": "ja",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#090909",
+  "theme_color": "#dfff38",
+  "categories": ["entertainment"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

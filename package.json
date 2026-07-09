@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "generate:assets": "node scripts/generate-assets.mjs",
+    "prebuild": "npm run generate:assets",
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
@@ -14,7 +16,9 @@
     "deploy": "npm run build && wrangler deploy"
   },
   "devDependencies": {
+    "@types/node": "^26.1.1",
     "jsdom": "^29.1.1",
+    "sharp": "^0.35.3",
     "typescript": "^7.0.2",
     "vite": "^8.1.4",
     "vitest": "^4.1.10",
